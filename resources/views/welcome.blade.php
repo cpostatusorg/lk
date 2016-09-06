@@ -51,7 +51,7 @@
                         <img src={{asset('img/logo.jpg')}} class="img-responsive" alt="Responsive image">
                         <div class="caption">
                             <h3>Заголовок...</h3>
-                            <p>Контент...</p>
+                            <p>Контент..вввввв.</p>
                         </div>
                     </div>
                 </div>
