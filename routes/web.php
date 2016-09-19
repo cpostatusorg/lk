@@ -12,11 +12,13 @@
 */
 
 Auth::routes();
+Route::get('/logout', 'HomeController@index');
+Route::get('/aboutproject', 'WelcomeController@showAboutProject');
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('/admin', 'Admin\AdminController@index');
-Route::get('/root', 'Root\RootController@index');
+Route::get('/admins/admin', 'Admin\AdminController@index');
+Route::get('/roots/root', 'Root\RootController@index');
 
 
 Route::get('/home', 'HomeController@index');
@@ -24,25 +26,26 @@ Route::get('/home', 'HomeController@index');
 /*
  * Student routes
  */
-Route::get('/student', 'Student\StudentController@index');
+Route::get('/students/student', 'Student\StudentController@index');
+Route::get('/students/options', 'Student\StudentController@showOptionsForm');
 //register student for bank
-Route::get('/student/registerStud', 'Student\RegisterController@showRegStudForm');
-Route::post('/student/registerStud', 'Student\RegisterController@registerStud');
+Route::get('/students/registerStud', 'Student\RegisterController@showRegStudForm');
+Route::post('/students/registerStud', 'Student\RegisterController@registerStud');
 //register card for bank
-Route::get('/student/registerCard', 'Student\RegisterController@showRegCardForm');
-Route::post('/student/registerCard', 'Student\RegisterController@registerCard');
+Route::get('/students/registerCard', 'Student\RegisterController@showRegCardForm');
+Route::post('/students/registerCard', 'Student\RegisterController@registerCard');
 /*
  * Balance routes
  */
 //show balance recharge(пополнить) form
-Route::get('/student/balanceRecharge', 'Student\BalanceController@showBalanceRechargeForm');
+Route::get('/students/balanceRecharge', 'Student\BalanceController@showBalanceRechargeForm');
 //create recharge
-Route::post('/student/balanceRecharge', 'Student\BalanceController@createRecharge');
+Route::post('/students/balanceRecharge', 'Student\BalanceController@createRecharge');
 //create payment notice(извещение)
-Route::post('/student/paymentNotice', 'Student\BalanceController@createPaymentNotice');
+Route::post('/students/paymentNotice', 'Student\BalanceController@createPaymentNotice');
 //get recharge status
-Route::get('/student/rechargeStatus', 'Student\BalanceController@getRechargeStatus');
+Route::get('/students/rechargeStatus', 'Student\BalanceController@getRechargeStatus');
 /*
  * Transaction route
  */
-Route::post('/student/Transaction', 'Student\TransactionController@Transaction');
+Route::post('/students/Transaction', 'Student\TransactionController@Transaction');

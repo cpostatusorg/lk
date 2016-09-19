@@ -23,6 +23,12 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        return view('main.welcome');
     }
+
+    public function showAboutProject()
+    {
+        return view('main.aboutProject');
+    }
+
 }

@@ -1,0 +1,196 @@
+/* --------------------@MEDIA------------------------ */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 1200px) {
+    /* Гамбургер */
+    .navbar-toggle {
+        margin-right: 0;
+        margin-top: 22px;
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    #welcome {
+        height: calc(100% - 75px);
+    }
+    /* Главный заголовок */
+    .navbar-brand {
+        margin-top: 14px;
+    }
+    /* ЛОГОТИП ПРОЕКТА */
+    #logo>a>img {
+        margin-bottom: 5px;
+        margin-left: 0;
+    }
+    /* Гамбурег и его список */
+    .collapse {
+        float: none;
+        margin-right: 0;
+    }
+    .nav {
+        text-align: center;
+    }
+    .nav>li {
+        font-size: 18px;
+    }
+    /* Убираем первый элемент из списка TOGGLE */
+    ul>li:first-child>a {
+        display: none;
+    }
+
+}
+@media (max-width: 621px) {
+    /* FOOTER */
+    #section_1_1, #section_1_2, #section_1_3 {
+        font-size: 13px;
+    }
+    #section_1_3>.container-fluid>.row>#icons>i {
+        margin-right: 7px;
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    /* Текст WELCOME */
+    #logo_text>div {
+        font-size: 28px;
+    }
+    #text>div {
+        font-size: 18px;
+    }
+    /* Текст КАК РАБОТАЕТ */
+    #project {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 477px) {
+    /* FOOTER */
+    #footer>.row>div {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    #section_1_3>.container-fluid>.row>#icons>i {
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+}
+
+@media (max-width: 366px) {
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 18px;
+    }
+    /* Текст WELCOME */
+    #logo_text>div {
+        font-size: 28px;
+    }
+    #text>div {
+        font-size: 18px;
+    }
+    /* Текст КАК РАБОТАЕТ */
+    #project {
+        font-size: 28px;
+    }
+    /* Гамбурег и его список */
+    .nav>li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 345px) {
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 18px;
+    }
+    /* Гамбурег и его список */
+    .nav>li {
+        font-size: 18px;
+    }
+}
+@media (max-width: 333px) {
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 16px;
+    }
+    /* Гамбурег и его список */
+    .nav>li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 322px) {
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 16px;
+    }
+    /* Гамбурег и его список */
+    .nav>li {
+        font-size: 16px;
+    }
+}
+
+/* iphome5 320p */
+@media (max-width: 321px) {
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 14px;
+    }
+    /* Текст WELCOME */
+    #logo_text>div {
+        font-size: 24px;
+    }
+    #text>div {
+        font-size: 14px;
+    }
+    /* Текст КАК РАБОТАЕТ */
+    #project {
+        font-size: 24px;
+    }
+    /* Гамбурег и его список */
+    .nav>li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 316px) {
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 18px;
+    }
+    /* Текст WELCOME */
+    #logo_text>div {
+        font-size: 20px;
+    }
+    #text>div {
+        font-size: 13px;
+    }
+    /* Текст КАК РАБОТАЕТ */
+    #project {
+        font-size: 20px;
+    }
+    /* Гамбурег и его список */
+    .nav>li {
+        font-size: 18px;
+    }
+}

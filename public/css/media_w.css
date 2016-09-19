@@ -1,0 +1,832 @@
+
+@media (max-width: 2881px) {
+
+}
+
+@media (max-width: 2561px) {
+
+}
+
+@media (max-width: 2049px) {
+
+}
+
+@media (max-width: 1921px) {
+
+}
+
+@media (max-width: 1681px) {
+
+}
+
+@media (max-width: 1601px) {
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 22px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 20px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 22px;
+    }
+    /* FOOTER */
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 16px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+
+
+}
+
+@media (max-width: 1537px) {
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 22px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 20px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1441px) {
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 22px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 20px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1367px) {
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 22px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 20px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1281px) {
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 22px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 20px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1201px) {
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 22px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 20px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1081px) {
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 22px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 20px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1025px) {
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 22px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 20px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 801px) {
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 20px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 18px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 769px) {
+    /* ВЕРХНЕЕ МЕНЮ */
+
+    /* Кнопки меню */
+    .nav {
+        text-align: center;
+    }
+    .nav>li {
+        font-size: 18px;
+    }
+
+    /* КОНТЕКСТ */
+
+    /* Слоган */
+    #logo_text {
+        font-size: 20px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 18px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 16px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 751px) {
+    /* ВЕРХНЕЕ МЕНЮ */
+
+    /* логотип проекта */
+    #logo>a>img {
+        max-height: 40px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 20px;
+    }
+    /* Кнопки меню */
+    .nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nav>li {
+        font-size: 18px;
+    }
+    /* Убираем первый элемент из списка TOGGLE */
+    ul>li:first-child>a {
+        display: none;
+    }
+    /* КОНТЕКСТ */
+
+    /* Высота блока */
+    #welcome {
+        height: calc(100% - 64px);
+    }
+    /* Слоган */
+    #logo_text {
+        font-size: 20px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 18px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 14px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 721px) {
+    /* ВЕРХНЕЕ МЕНЮ */
+
+    /* логотип проекта */
+    #logo>a>img {
+        max-height: 40px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 20px;
+    }
+    /* Кнопки меню */
+    .nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nav>li {
+        font-size: 18px;
+    }
+
+    /* КОНТЕКСТ */
+
+    /* Высота блока */
+    #welcome {
+        height: calc(100% - 64px);
+    }
+    /* Слоган */
+    #logo_text {
+        font-size: 20px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 18px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 14px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 641px) {
+    /* ВЕРХНЕЕ МЕНЮ */
+
+    /* логотип проекта */
+    #logo>a>img {
+        max-height: 40px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 20px;
+    }
+    /* Кнопки меню */
+    .nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nav>li {
+        font-size: 18px;
+    }
+
+    /* КОНТЕКСТ */
+
+    /* Высота блока */
+    #welcome {
+        height: calc(100% - 64px);
+    }
+    /* Слоган */
+    #logo_text {
+        font-size: 20px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 18px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 14px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 601px) {
+    /* ВЕРХНЕЕ МЕНЮ */
+
+    /* логотип проекта */
+    #logo>a>img {
+        max-height: 40px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 20px;
+    }
+    /* Кнопки меню */
+    .nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nav>li {
+        font-size: 18px;
+    }
+
+    /* КОНТЕКСТ */
+
+    /* Высота блока */
+    #welcome {
+        height: calc(100% - 64px);
+    }
+    /* Слоган */
+    #logo_text {
+        font-size: 20px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 18px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 14px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 541px) {
+    /* ВЕРХНЕЕ МЕНЮ */
+
+    /* логотип проекта */
+    #logo>a>img {
+        max-height: 40px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 20px;
+    }
+    /* Кнопки меню */
+    .nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nav>li {
+        font-size: 18px;
+    }
+
+    /* КОНТЕКСТ */
+
+    /* Высота блока */
+    #welcome {
+        height: calc(100% - 64px);
+    }
+    /* Слоган */
+    #logo_text {
+        font-size: 20px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 18px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 14px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 481px) {
+
+    /* ВЕРХНЕЕ МЕНЮ */
+
+    /* логотип проекта */
+    #logo>a>img {
+        max-height: 40px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 18px;
+    }
+    /* Кнопки меню */
+    .nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nav>li {
+        font-size: 16px;
+    }
+
+    /* КОНТЕКСТ */
+
+    /* Высота блока */
+    #welcome {
+        height: calc(100% - 64px);
+    }
+    /* Слоган */
+    #logo_text {
+        font-size: 18px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 16px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+    }
+
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 14px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 321px) {
+
+    /* ВЕРХНЕЕ МЕНЮ */
+
+    /* логотип проекта */
+    #logo>a>img {
+        max-height: 40px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 16px;
+    }
+    /* Кнопки меню */
+    .nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nav>li {
+        font-size: 14px;
+    }
+
+    /* КОНТЕКСТ */
+
+    /* Высота блока */
+    #welcome {
+        height: calc(100% - 64px);
+    }
+    /* Слоган */
+    #logo_text {
+        font-size: 16px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 14px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 14px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 241px){
+
+    /* ВЕРХНЕЕ МЕНЮ */
+
+    /* логотип проекта */
+    #logo>a>img {
+        max-height: 40px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    /* Главный заголовок */
+    .navbar-brand {
+        font-size: 16px;
+    }
+    /* Кнопки меню */
+    .nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nav>li {
+        font-size: 14px;
+    }
+
+    /* КОНТЕКСТ */
+
+    /* Высота блока */
+    #welcome {
+        height: calc(100% - 64px);
+    }
+    /* Слоган */
+    #logo_text {
+        font-size: 14px;
+    }
+    /* Текст о проекте */
+    #text {
+        font-size: 12px;
+    }
+    /* Главная кнопка */
+    .btn {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+    }
+
+    /* НИЖНЕЕ МЕНЮ */
+
+    /* футер */
+    #footer {
+        color: #777;
+        font-size: 12px;
+    }
+    /* Ряд */
+    #section_1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* Элементы ряда */
+    #section_1>div {
+        height: auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Последний элемент ряда */
+    #section_1_3>div {
+        margin-bottom: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

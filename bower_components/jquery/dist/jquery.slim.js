@@ -2885,7 +2885,7 @@ jQuery.fn.extend( {
 // Initialize a jQuery object
 
 
-// A central reference to the root jQuery(document)
+// A central reference to the roots jQuery(document)
 var rootjQuery,
 
 	// A simple way to check for HTML strings

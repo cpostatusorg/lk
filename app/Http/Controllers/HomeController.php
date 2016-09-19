@@ -27,10 +27,11 @@ class HomeController extends Controller
 
         foreach ($roles as $role) {
             if(Auth::user()->hasRole($role)){
-                return redirect('/'.$role);
+                return redirect('/'.$role.'s/'.$role);
             }
         }
 
         return redirect('/');
     }
+
 }

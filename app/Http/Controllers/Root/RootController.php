@@ -25,6 +25,6 @@ class RootController extends Controller
      */
     public function index()
     {
-        return view('root');
+        return view('roots/root');
     }
 }

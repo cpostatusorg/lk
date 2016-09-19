@@ -1,0 +1,15 @@
+/* --------------------@MEDIA------------------------ */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 1200px) {
+    /* Гамбургер */
+    .navbar-toggle {
+        margin-right: 0;
+        margin-top: 22px;
+    }
+}
+
