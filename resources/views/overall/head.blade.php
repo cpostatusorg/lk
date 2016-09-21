@@ -11,7 +11,6 @@
         <!-- CSS -->
         <link href="http://localhost/css/main.css" rel="stylesheet">
         <link href="http://localhost/css/welcome.css" rel="stylesheet">
-        <link href="http://localhost/css/media.css" rel="stylesheet">
         <link href="http://localhost/css/media_w.css" rel="stylesheet">
         <link href="http://localhost/css/login.css" rel="stylesheet">
         <!-- FONT -->
@@ -57,8 +56,8 @@
         </script>
     </head>
     <body>
-
         @yield('app')
+        @include('auth.login')
         @include('overall.footer')
 
         <!-- Preloader -->

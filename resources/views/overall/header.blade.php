@@ -18,7 +18,7 @@
 
                         <!-- TOGGLE -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                                 <span class="sr-only">toggle</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -32,7 +32,7 @@
                                 <li id="first"><a href="/">Главная</a></li>
                                 <li><a href="{{ url('/aboutproject') }}">О проекте</a></li>
                                 <li><a href="#footer">Контакты</a></li>
-                                <li id="last"><a href="{{ url('/login') }}">Войти</a></li>
+                                <li id="last"><a data-toggle="modal" data-target="#myModal" id="loginForm">Войти</a></li>
                             </ul>
                         </div>
 

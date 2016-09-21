@@ -15,11 +15,9 @@
 #logo_text {
     height: 10%;
     color: black;
-    /*rgb(82, 82, 82);*/
 }
 
 #text {
-    /*color: rgb(174, 174, 174);*/
     color: #777;
 }
 
@@ -52,8 +50,9 @@
 #menu_container>div {
     height: 20%;
 }
+/* КОНТЕНТ - ОСНОВНАЯ КНОПКА */
 
-.btn {
+.btn-about {
     width: 300px;
     height: 50px;
     background: #7FB6D9;
@@ -63,33 +62,34 @@
     font-size: 20px;
 }
 
-.btn:focus {
+.btn-about:focus {
     border: none;
     background: #7FB6D9;
     color: white;
     outline: none !important;;
 }
-.btn:hover {
+.btn-about:hover {
     background: #387BA6;
     border: none;
     color: white;
 }
 
-.btn:active {
+.btn-about:active {
     border: none !important;
     background: #1F6795;
     outline: none !important;;
 }
 
-.btn>a {
+.btn-about>a {
     color: white
 }
 
 /* КАК ЭТО РАБОТАЕТ */
+
 #project {
     text-align: center;
     font-size: 60px;
-    margin-top: 10%;
+
 }
 /* YouTube */
 #project_video {
@@ -125,9 +125,6 @@
 .embed-responsive-4by3 {
     padding-bottom: 75%;
 }
-
-
-
 
 
 

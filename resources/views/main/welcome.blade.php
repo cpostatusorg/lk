@@ -31,7 +31,7 @@
                 <div class="container-fluid" id="menu_container">
                     <div class="col-md-12 col-sm-12 col-xs-12" id="button2">
                         <a href="{{ url('/aboutproject') }}">
-                        <button type="button" class="btn">
+                        <button type="button" class="btn btn-about">
                                 Узнать больше
                         </button>
                         </a>

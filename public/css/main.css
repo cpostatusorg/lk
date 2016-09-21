@@ -13,6 +13,16 @@ body,html {
     height: 100%;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px white; /* цвет вашего фона */
+    -webkit-text-fill-color: black; /* цвет текста */
+}
+
+input:focus:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px white; /* цвет вашего фона */
+    -webkit-text-fill-color: black; /* цвет текста */
+}
+
 #main1{
     border-bottom: 1px solid #dee0df;
     padding: 0;
@@ -32,6 +42,7 @@ body,html {
 .navbar-toggle {
     margin-top: 16px;
     border: none;
+    margin-right: 0;
 }
 
 
@@ -116,51 +127,5 @@ body,html {
 .navbar-brand {
     text-align: center;
 }
-/*
-#footer {
-    background: white;
-}
 
-#section_1 {
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-#section_1_1 {
-    height: 80px;
-    text-align: right;
-}
-
-#section_1_1>.row {
-    margin-top: 10px;
-}
-
-#section_1_2 {
-    height: 80px;
-    border-left: 1px dashed #cccccc;
-    text-align: center;
-}
-
-#section_1_2>.row {
-    margin-top: 10px;
-}
-
-#section_1_3 {
-    height: 80px;
-    border-left: 1px dashed #cccccc;
-    text-align: left;
-}
-
-#section_1_3>.container-fluid>.row {
-    margin-top: 10px;
-}
-
-#section_1_3>.container-fluid>.row>#icons>i {
-    margin-right: 10px;
-}
-
-#section_1_3>.container-fluid>.row>.col-md-12 {
-    padding: 0;
-}
-*/
 
