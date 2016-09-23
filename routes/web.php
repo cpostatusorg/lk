@@ -14,7 +14,7 @@ Route::get('/roots/root', 'Root\RootController@index');
 
 Route::get('/qrs/qr', 'Qr\QrController@index');
 Route::post('/qrs/add', 'Qr\QrController@addElement');
-Route::get('/qrinfo/{id}', function($id){
+Route::get('/qrinfo/{id}', function(App\Model\Qr\Qr $id){
     return view('qrs.info')->with('id', $id);
 });
 

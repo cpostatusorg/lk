@@ -4,11 +4,12 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">Список зарегистрированных организаций</div>
 
                     <div class="panel-body">
+                        <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -35,6 +36,7 @@
                                 @endforeach
                             </tbody>
                         </table>
+                        </div>
 
                     </div>
                 </div>
