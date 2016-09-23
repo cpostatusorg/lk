@@ -13,6 +13,11 @@
         <link href="http://localhost/css/welcome.css" rel="stylesheet">
         <link href="http://localhost/css/media_w.css" rel="stylesheet">
         <link href="http://localhost/css/login.css" rel="stylesheet">
+
+        @if (Auth::check() and Auth::user()->hasRole('qr'))
+            <link href="http://localhost/css/qr.css" rel="stylesheet">
+        @endif
+
         <!-- FONT -->
         <link rel="stylesheet" href="http://localhost/css/font-awesome-4.6.3/css/font-awesome.min.css">
 
@@ -28,7 +33,7 @@
         <script src="/js/main.js"></script>
         <script src="/js/queryloader2.min.js"></script>
 
-      <!-- Preloader -->
+        <!-- Плавное перемещение и триггер на форму логина -->
         <script type="text/javascript">
             $(document).ready(function(){
                 $('h2').append('<a href="#header">top</a>');
@@ -45,7 +50,24 @@
                     });
                 });
 
+                //active=1
+                if(getUrlVars()["active"] == 1){
+                    $('#loginForm').trigger('click');
+                }
+                @if( session('data')[0] == 'active=1' )
+                    $('#loginForm').trigger('click');
+                @elseif( $errors->has('name') || $errors->has('password'))
+                    $('#loginForm').trigger('click');
+                @endif
             });
+
+            function getUrlVars() {
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                    vars[key] = value;
+                });
+                return vars;
+            }
         </script>
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -57,8 +79,14 @@
     </head>
     <body>
         @yield('app')
-        @include('auth.login')
-        @include('overall.footer')
+
+        <!-- При роли Qr отключаем footer -->
+        @if (Auth::check() and Auth::user()->hasRole('qr'))
+            @include('qrs.add')
+        @else
+            @include('overall.footer')
+            @include('auth.login')
+        @endif
 
         <!-- Preloader -->
         <script type="text/javascript">

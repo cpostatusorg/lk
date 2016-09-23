@@ -1,3 +1,11 @@
+@if(Request::url() == 'http://localhost/login')
+    <!-- Исключение на адрес /login -->
+    <script type="text/javascript">
+        document.location.href = "{{url('/?active=1')}}";
+    </script>
+
+@else
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -62,3 +70,5 @@
         </div>
     </div>
 </div>
+
+@endif

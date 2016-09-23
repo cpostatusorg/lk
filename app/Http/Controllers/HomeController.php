@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $roles = ['root', 'admin', 'student'];
+        $roles = ['root', 'admin', 'student', 'qr'];
 
         foreach ($roles as $role) {
             if(Auth::user()->hasRole($role)){

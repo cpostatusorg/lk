@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class SchoolsTable extends Migration
+class CreateQrsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class SchoolsTable extends Migration
      */
     public function up()
     {
-        Schema::create('schools', function (Blueprint $table) {
-            $table->increments('id_sch');
-            $table->string('name');
+        Schema::create('qrs', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('organisation');
+            $table->string('ration');
+            $table->string('author');
+            $table->string('executor');
+            $table->string('href');
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class SchoolsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('schools');
+        Schema::drop('qrs');
     }
 }

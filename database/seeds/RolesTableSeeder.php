@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\User;
-use App\Role;
+use App\Model\User;
+use App\Model\Entrust\Role;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,7 +18,7 @@ class RolesTableSeeder extends Seeder
     public function run()
     {
 
-        $roles = ['roots', 'admins', 'student'];
+        $roles = ['root', 'admin', 'student', 'qr'];
 
         foreach ($roles as $role) {
 
@@ -28,7 +28,7 @@ class RolesTableSeeder extends Seeder
                 'password' => bcrypt('secret')
             ]);
 
-            $owner = new Role();
+            $owner = new App\Model\Entrust\Role();
             $owner->name = $role;
             $owner->display_name = $role;
             $owner->description = $role;

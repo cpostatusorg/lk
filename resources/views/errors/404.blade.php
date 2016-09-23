@@ -31,7 +31,7 @@
             <div class="content">
                 <div class="panel panel-danger">
                     <div class="panel-heading">Ошибка №404. Страница не найдена.</div>
-                    <div class="panel-body">Вы будете перенаправлены на страницу авторизации через</div>
+                    <div class="panel-body">Вы будете перенаправлены на главную страницу через</div>
                     <div id="timer_inp">5</div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 obj.innerHTML--;
 
                 if(obj.innerHTML==0){
-                    document.location.href = "{{url('/login')}}";
+                    document.location.href = "{{url('/')}}";
                 }else{
                     setTimeout(timer,1000);
                 }

@@ -60,5 +60,6 @@ class Kernel extends HttpKernel
         'StudRoleCheck' => \App\Http\Middleware\StudRoleCheckMiddleware::class,
         'AdminRoleCheck' => \App\Http\Middleware\AdminRoleCheckMiddleware::class,
         'RootRoleCheck' => \App\Http\Middleware\RootRoleCheckMiddleware::class,
+        'QrRoleCheck' => \App\Http\Middleware\QrRoleCheckMiddleware::class,
     ];
 }

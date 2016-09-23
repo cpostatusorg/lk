@@ -29,10 +29,37 @@
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li id="first"><a href="/">Главная</a></li>
-                                <li><a href="{{ url('/aboutproject') }}">О проекте</a></li>
-                                <li><a href="#footer">Контакты</a></li>
-                                <li id="last"><a data-toggle="modal" data-target="#myModal" id="loginForm">Войти</a></li>
+
+                                @if (Auth::guest())
+
+                                    <li id="first"><a href="/">Главная</a></li>
+                                    <li><a href="{{ url('/aboutproject') }}">О проекте</a></li>
+                                    <li><a href="#footer">Контакты</a></li>
+
+                                @elseif (Auth::user()->hasRole('qr'))
+
+                                    <li></li>
+                                    <li><a href="/qrs/qr">Главная</a></li>
+                                    <li><a data-toggle="modal" data-target="#myModal" id="loginForm">Добавить</a></li>
+
+                                @endif
+
+                                @if (Auth::guest())
+                                    <li id="last"><a data-toggle="modal" data-target="#myModal" id="loginForm">Войти</a></li>
+                                @else
+                                    <li>
+                                        <a href="{{ url('/logout') }}"
+                                           onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                            Выход
+                                        </a>
+
+                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                @endif
+
                             </ul>
                         </div>
 
