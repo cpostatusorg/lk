@@ -29,7 +29,7 @@
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-
+                                <!-- МЕНЮ ДЛЯ РАЗЛИЧНЫХ РОЛЕЙ -->
                                 @if (Auth::guest())
 
                                     <li id="first"><a href="/">Главная</a></li>
@@ -43,11 +43,18 @@
                                     <li><a data-toggle="modal" data-target="#myModal" id="loginForm">Добавить</a></li>
 
                                 @elseif (Auth::user()->hasRole('root'))
+
                                     <li></li>
                                     <li><a href="/roots/root">Главная</a></li>
                                     <li><a href="{{ url('/roots/schools') }}">Школы</a></li>
+
+                                @elseif (Auth::user()->hasRole('admin'))
+
+                                @elseif (Auth::user()->hasRole('student'))
+
                                 @endif
 
+                                <!-- ПРОВЕРКА НА АТВОРИЗАЦИЮ --ВОЙТИ-ВЫЙТИ -->
                                 @if (Auth::guest())
                                     <li id="last"><a data-toggle="modal" data-target="#myModal" id="loginForm">Войти</a></li>
                                 @else

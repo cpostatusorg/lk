@@ -1,0 +1,32 @@
+/* !!!АВТОРИЗАЦИЯ СТРАНИЦА */
+
+#login {
+    display: none;
+    height: calc(100% - 80px);
+    font-size: 19px;
+}
+
+/* Логин */
+.login_font_1 {
+    font-size: 16px;
+}
+/* Пароль */
+.login_font_2 {
+    font-size: 16px;
+}
+/* Запомнить меня */
+.login_font_3 {
+    font-size: 16px;
+}
+/* Войти */
+.btn-login {
+    font-size: 16px;
+    background: #7FB6D9;
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+.modal-dialog {
+    margin-top: 10%;
+}

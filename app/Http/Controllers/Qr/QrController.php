@@ -43,11 +43,8 @@ class QrController extends Controller
         $record->save();
 
         $record->href = $_SERVER['HTTP_ORIGIN'].'/qrinfo/'.$record->id;
-            //str_replace(" ", "", $request->input('organisation'));
-
         $record->save();
 
         return redirect('qrs/qr');
-
     }
 }
