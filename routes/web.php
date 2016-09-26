@@ -10,7 +10,9 @@ Route::get('/aboutproject', 'WelcomeController@showAboutProject');
 
 
 Route::get('/admins/admin', 'Admin\AdminController@index');
+
 Route::get('/roots/root', 'Root\RootController@index');
+Route::get('/roots/schools', 'Root\RootController@showSchoolForm');
 
 Route::get('/qrs/qr', 'Qr\QrController@index');
 Route::post('/qrs/add', 'Qr\QrController@addElement');

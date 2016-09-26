@@ -16,8 +16,9 @@
 
         @if (Auth::check() and Auth::user()->hasRole('qr'))
             <link href="http://localhost/css/qr.css" rel="stylesheet">
+        @elseif(Auth::check() and Auth::user()->hasRole('root'))
+            <link href="http://localhost/css/root_school.css" rel="stylesheet">
         @endif
-
         <!-- FONT -->
         <link rel="stylesheet" href="http://localhost/css/font-awesome-4.6.3/css/font-awesome.min.css">
 

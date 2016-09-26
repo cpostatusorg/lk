@@ -34,7 +34,7 @@ class RolesTableSeeder extends Seeder
             $owner->description = $role;
             $owner->save();
 
-            $user = User::where('name', '=', $role)->first();
+            $user = App\Model\User::where('name', '=', $role)->first();
             $user->attachRole($owner);
 
         }

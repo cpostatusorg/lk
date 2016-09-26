@@ -42,6 +42,10 @@
                                     <li><a href="/qrs/qr">Главная</a></li>
                                     <li><a data-toggle="modal" data-target="#myModal" id="loginForm">Добавить</a></li>
 
+                                @elseif (Auth::user()->hasRole('root'))
+                                    <li></li>
+                                    <li><a href="/roots/root">Главная</a></li>
+                                    <li><a href="{{ url('/roots/schools') }}">Школы</a></li>
                                 @endif
 
                                 @if (Auth::guest())

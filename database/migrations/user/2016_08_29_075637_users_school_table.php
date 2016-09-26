@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UsersPassTable extends Migration
+class UsersSchoolTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class UsersPassTable extends Migration
      */
     public function up()
     {
-        Schema::create('users_pass', function (Blueprint $table) {
+        Schema::create('users_school', function (Blueprint $table) {
             $table->increments('id_user');
-            $table->string('email');
-            $table->rememberToken();
+            $table->double('id_sch');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class UsersPassTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users_pass');
+        Schema::drop('users_school');
     }
 }
