@@ -28,7 +28,7 @@
                     <!-- 1 -->
                     <div class="login_font_1 form-group">
 
-                        <div class="col-md-6 col-md-offset-3
+                        <div class="width_control col-md-6 col-md-offset-3
                                                      col-xs-6 col-xs-offset-3
                                                      col-sm-6 col-sm-offset-3
                                                      col-lg-6 col-lg-offset-3">
@@ -46,7 +46,7 @@
                     <!-- 2 -->
                     <div class="login_font_2 form-group">
 
-                        <div class="col-md-6 col-md-offset-3
+                        <div class="width_control col-md-6 col-md-offset-3
                                                     col-xs-6 col-xs-offset-3
                                                     col-sm-6 col-sm-offset-3
                                                     col-lg-6 col-lg-offset-3">
@@ -63,7 +63,7 @@
                     <!-- 3 -->
                     <div class="login_font_3 form-group">
 
-                        <div class="col-md-6 col-md-offset-3
+                        <div class="width_control col-md-6 col-md-offset-3
                                                         col-xs-6 col-xs-offset-3
                                                         col-sm-6 col-sm-offset-3
                                                         col-lg-6 col-lg-offset-3">
@@ -80,7 +80,7 @@
                     <!-- 4 -->
                     <div class="login_font_4 form-group">
 
-                        <div class="col-md-6 col-md-offset-3
+                        <div class="width_control col-md-6 col-md-offset-3
                                                     col-xs-6 col-xs-offset-3
                                                     col-sm-6 col-sm-offset-3
                                                     col-lg-6 col-lg-offset-3">
@@ -97,7 +97,7 @@
                     <!-- 5 -->
                     <div class="login_font_5 form-group">
 
-                        <div id="sign_width" class="col-md-6 col-md-offset-3
+                        <div class="width_control col-md-6 col-md-offset-3
                                                     col-xs-6 col-xs-offset-3
                                                     col-sm-6 col-sm-offset-3
                                                     col-lg-6 col-lg-offset-3">
