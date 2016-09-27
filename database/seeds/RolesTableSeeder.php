@@ -22,20 +22,11 @@ class RolesTableSeeder extends Seeder
 
         foreach ($roles as $role) {
 
-            DB::table('users')->insert([
-                'name' => $role,
-                'email' => $role.'@mail.ru',
-                'password' => bcrypt('secret')
-            ]);
-
             $owner = new App\Model\Entrust\Role();
             $owner->name = $role;
             $owner->display_name = $role;
             $owner->description = $role;
             $owner->save();
-
-            $user = App\Model\User::where('name', '=', $role)->first();
-            $user->attachRole($owner);
 
         }
 

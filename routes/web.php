@@ -10,6 +10,7 @@ Route::get('/aboutproject', 'WelcomeController@showAboutProject');
 
 
 Route::get('/admins/admin', 'Admin\AdminController@index');
+Route::post('/admins/add', 'Admin\AdminController@addElement');
 
 Route::get('/roots/root', 'Root\RootController@index');
 Route::get('/roots/schools', 'Root\RootController@showSchoolForm');

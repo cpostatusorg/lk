@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\Model\Root\School;
+use App\Model\User;
 
 class RootController extends Controller
 {
@@ -26,7 +27,9 @@ class RootController extends Controller
      */
     public function index()
     {
-        return view('roots/root');
+        //$records = Auth::user()->school;
+        //$records = School::find(1)->users;
+        return view('roots.root');
     }
 
     public function showSchoolForm( )

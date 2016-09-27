@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use App\Model\User;
 
 class AdminController extends Controller
 {
@@ -25,7 +26,17 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admins/admin');
+
+        $all_students = User::all()->where('school_table_id', Auth::user()->school->id);
+
+        return view('admins/admin')->with('all_students', $all_students);
+
+    }
+
+    public function addElement()
+    {
+        $free_user = User::first()->where('card_table_id', '');
+
     }
 
 }

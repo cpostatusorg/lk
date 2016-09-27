@@ -20,7 +20,7 @@
                                 <tbody>
                                 @foreach($records as $record)
                                     <tr>
-                                        <td>{{ $record->id_sch }}</td>
+                                        <td>{{ $record->id }}</td>
                                         <td>{{ $record->name }}</td>
                                     </tr>
                                 @endforeach

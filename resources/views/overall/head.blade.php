@@ -64,6 +64,7 @@
         @elseif (Auth::user()->hasRole('root'))
             @include('overall.footer')
         @elseif (Auth::user()->hasRole('admin'))
+            @include('admins.add')
             @include('overall.footer')
         @elseif (Auth::user()->hasRole('student'))
             @include('overall.footer')

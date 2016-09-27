@@ -9,7 +9,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    Root page
+                  
                 </div>
             </div>
         </div>

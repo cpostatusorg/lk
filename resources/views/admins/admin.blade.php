@@ -9,7 +9,9 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    Admin page
+                    @foreach($all_students as $student)
+                        {{$student}}
+                    @endforeach
                 </div>
             </div>
         </div>
