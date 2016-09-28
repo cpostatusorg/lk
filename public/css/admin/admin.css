@@ -1,0 +1,149 @@
+#accounts {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.panel {
+    border: none;
+}
+
+.panel-heading {
+    border: none;
+}
+
+.panel-body {
+    border: none;
+}
+
+#parallels {
+    width: 20%;
+    height: 100%;
+    border: 1px solid #ddd;
+    padding: 0;
+    font-size: 18px;
+}
+
+#class {
+    width: 20%;
+    height: 100%;
+    border: 1px solid #ddd;
+    padding: 0;
+    border-left: none;
+    font-size: 18px;
+}
+
+#students {
+    width: 60%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-left: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.panel-body>div {
+    float: left;
+}
+
+#parallels>ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#parallels>ul>li {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#parallels>ul>li:last-child {
+    margin-bottom: 10px;
+}
+
+#parallels>ul>li>button {
+    width: 100%;
+    background-color: white;
+    border: none;
+    outline:none;
+}
+
+#parallels>ul>li>button:hover {
+    background: #7FB6D9;
+    color: white;
+}
+
+#parallels>ul>li>button:active {
+    background: #387BA6;
+    color: white !important;
+}
+
+.panel-heading {
+    font-size: 20px;
+}
+
+#class>ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#class>ul>li {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#class>ul>li:last-child {
+    margin-bottom: 10px;
+}
+
+#class>ul>li>button {
+    width: 100%;
+    background-color: white;
+    border: none;
+    outline:none;
+}
+
+#class>ul>li>button:hover {
+    background: #7FB6D9;
+    color: white;
+}
+
+#class>ul>li>button:active {
+    background: #387BA6;
+    color: white !important;
+}
+
+#students>ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#students>ul>li {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#students>ul>li:last-child {
+    margin-bottom: 10px;
+}
+
+#students>ul>li>button {
+    width: 100%;
+    background-color: white;
+    border: none;
+    outline:none;
+}
+
+#students>ul>li>button:hover {
+    background: #7FB6D9;
+    color: white;
+}
+
+#students>ul>li>button:active {
+    background: #387BA6;
+    color: white !important;
+}

@@ -2,19 +2,33 @@
 @extends('overall.header')
 <!-- content -->
 @section('content')
-<div class="container">
+<div id="accounts" class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Активные личные кабинеты</div>
 
                 <div class="panel-body">
-                    @foreach($all_students as $student)
-                        {{$student}}
-                    @endforeach
+                    <div id="parallels" class="container">
+                        <ul>
+                        @for($i=1; $i<12; $i++)
+
+                                <li><button onclick="ajax(this)">{{ $i }} классы</button></li>
+
+                        @endfor
+                        </ul>
+                    </div>
+                    <div id="class" class="container">
+
+                    </div>
+                    <div id="students" class="container">
+
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 @endsection

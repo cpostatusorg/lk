@@ -32,7 +32,10 @@ class UsersTableSeeder extends Seeder
                     'name' => 'user_'.uniqid(),
                     'password' => bcrypt('secret'),
                     'school_table_id' => $school->id,
-                    'created_at' => Carbon::now()->format('Y-m-d H:i:s')
+                    'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                    'fio' => 'text',
+                    'parallel' => 'text',
+                    'class' => 'text'
                     ]);
             }
         }
@@ -52,7 +55,11 @@ class UsersTableSeeder extends Seeder
                 'name' => 'admin_'.uniqid(),
                 'password' => bcrypt('secret'),
                 'school_table_id' => $school->id,
-                'created_at' => Carbon::now()->format('Y-m-d H:i:s')
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'fio' => 'text',
+                'parallel' => 'text',
+                'class' => 'text',
+                'card_table_id' => -1
             ]);
         }
 
@@ -71,7 +78,11 @@ class UsersTableSeeder extends Seeder
             'name' => 'root',
             'password' => bcrypt('secret'),
             'school_table_id' => 999,
-            'created_at' => Carbon::now()->format('Y-m-d H:i:s')
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'fio' => 'text',
+            'parallel' => 'text',
+            'class' => 'text',
+            'card_table_id' => -1
         ]);
 
         $users = User::all();
@@ -89,7 +100,11 @@ class UsersTableSeeder extends Seeder
             'name' => 'qr',
             'password' => bcrypt('secret'),
             'school_table_id' => 998,
-            'created_at' => Carbon::now()->format('Y-m-d H:i:s')
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'fio' => 'text',
+            'parallel' => 'text',
+            'class' => 'text',
+            'card_table_id' => -1
         ]);
 
         $users = User::all()->where('name', 'qr');

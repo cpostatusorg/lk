@@ -51,7 +51,7 @@
                                 @elseif (Auth::user()->hasRole('admin'))
 
                                     <li></li>
-                                    <li><a href="/admis/admin">Главная</a></li>
+                                    <li><a href="/admins/admin">Главная</a></li>
                                     <li><a data-toggle="modal" data-target="#myModal" id="loginForm">Зарегистрировать</a></li>
 
                                 @elseif (Auth::user()->hasRole('student'))

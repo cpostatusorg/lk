@@ -22,7 +22,8 @@
                       class="form-horizontal"
                       role="form"
                       method="POST"
-                      action="{{ url('/admins/add') }}">
+                      action="javascript:void(null);"
+                      onsubmit=call()>
 
                     {{ csrf_field() }}
                     <!-- 1 -->
@@ -33,10 +34,10 @@
                                                      col-sm-6 col-sm-offset-3
                                                      col-lg-6 col-lg-offset-3">
                             <input placeholder="ФИО"
-                                   id="organisation"
+                                   id="fio"
                                    type="text"
                                    class="form-control"
-                                   name="organisation"
+                                   name="fio"
                                    readonly
                                    onfocus="this.removeAttribute('readonly')">
 
@@ -51,10 +52,10 @@
                                                     col-sm-6 col-sm-offset-3
                                                     col-lg-6 col-lg-offset-3">
                             <input placeholder="Номер карты"
-                                   id="ration"
+                                   id="card_number"
                                    type="text"
                                    class="form-control"
-                                   name="ration"
+                                   name="card_number"
                                    readonly
                                    onfocus="this.removeAttribute('readonly')">
                         </div>
@@ -67,17 +68,33 @@
                                                         col-xs-6 col-xs-offset-3
                                                         col-sm-6 col-sm-offset-3
                                                         col-lg-6 col-lg-offset-3">
-                            <input placeholder="Класс"
-                                   id="author"
+                            <input placeholder="Параллель (1,2,3...)"
+                                   id="parallel"
                                    type="text"
                                    class="form-control"
-                                   name="author"
+                                   name="parallel"
                                    readonly
                                    onfocus="this.removeAttribute('readonly')">
                         </div>
 
                     </div>
+                    <!-- 4 -->
+                    <div class="login_font_4 form-group">
 
+                        <div class="width_control col-md-6 col-md-offset-3
+                                                    col-xs-6 col-xs-offset-3
+                                                    col-sm-6 col-sm-offset-3
+                                                    col-lg-6 col-lg-offset-3">
+                            <input placeholder="Класс (а,б,в,г...)"
+                                   id="classof"
+                                   type="text"
+                                   class="form-control"
+                                   name="classof"
+                                   readonly
+                                   onfocus="this.removeAttribute('readonly')">
+                        </div>
+
+                    </div>
                     <!-- 5 -->
                     <div class="login_font_5 form-group">
 

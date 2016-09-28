@@ -26,7 +26,8 @@
             @elseif (Auth::user()->hasRole('root'))
                 <link href="http://localhost/css/root/root_school.css" rel="stylesheet">
             @elseif (Auth::user()->hasRole('admin'))
-
+                <link href="http://localhost/css/admin/admin.css" rel="stylesheet">
+            <link href="http://localhost/css/admin/add.css" rel="stylesheet">
             @elseif (Auth::user()->hasRole('student'))
 
             @endif
@@ -36,6 +37,7 @@
             <script src="http://localhost/js/bootstrap.min.js"></script>
             <script src="/js/main.js"></script>
             <script src="/js/queryloader2.min.js"></script>
+            <script src="/js/ajax.js"></script>
             <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>

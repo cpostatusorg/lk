@@ -18,6 +18,9 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->default('none');
             $table->string('password');
+            $table->string('fio');
+            $table->string('parallel');
+            $table->string('class');
             //связи
             $table->integer('school_table_id');
             $table->integer('card_table_id')->default(0);
