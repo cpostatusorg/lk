@@ -31,9 +31,12 @@ class UsersTableSeeder extends Seeder
                     DB::table('users')->insert([
                     'name' => 'user_'.uniqid(),
                     'password' => bcrypt('secret'),
+                    'unique' => uniqid('u_', true),
                     'school_table_id' => $school->id,
                     'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-                    'fio' => 'text',
+                    'firstName' => 'text',
+                    'lastName' => 'text',
+                    'midName' => 'text',
                     'parallel' => 'text',
                     'class' => 'text'
                     ]);
@@ -54,9 +57,12 @@ class UsersTableSeeder extends Seeder
             DB::table('users')->insert([
                 'name' => 'admin_'.uniqid(),
                 'password' => bcrypt('secret'),
+                'unique' => uniqid('u_', true),
                 'school_table_id' => $school->id,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-                'fio' => 'text',
+                'firstName' => 'text',
+                'lastName' => 'text',
+                'midName' => 'text',
                 'parallel' => 'text',
                 'class' => 'text',
                 'card_table_id' => -1
@@ -77,9 +83,12 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'root',
             'password' => bcrypt('secret'),
+            'unique' => uniqid('u_', true),
             'school_table_id' => 999,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'fio' => 'text',
+            'firstName' => 'text',
+            'lastName' => 'text',
+            'midName' => 'text',
             'parallel' => 'text',
             'class' => 'text',
             'card_table_id' => -1
@@ -99,9 +108,12 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'qr',
             'password' => bcrypt('secret'),
+            'unique' => uniqid('u_', true),
             'school_table_id' => 998,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'fio' => 'text',
+            'firstName' => 'text',
+            'lastName' => 'text',
+            'midName' => 'text',
             'parallel' => 'text',
             'class' => 'text',
             'card_table_id' => -1

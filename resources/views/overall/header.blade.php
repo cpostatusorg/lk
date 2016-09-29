@@ -52,10 +52,12 @@
 
                                     <li></li>
                                     <li><a href="/admins/admin">Главная</a></li>
+                                    <li><a href="/admins/requests">Мои запросы</a></li>
                                     <li><a data-toggle="modal" data-target="#myModal" id="loginForm">Зарегистрировать</a></li>
+                                    <li><a href="#footer">Контакты</a></li>
 
                                 @elseif (Auth::user()->hasRole('student'))
-
+                                    <li><a href="#footer">Контакты</a></li>
                                 @endif
 
                                 <!-- ПРОВЕРКА НА АТВОРИЗАЦИЮ --ВОЙТИ-ВЫЙТИ -->

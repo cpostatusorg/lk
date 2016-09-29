@@ -82,7 +82,9 @@ class AdminController extends Controller
     public function postControl()
     {
         $validator = Validator::make($this->request->all(),[
-            'fio' => 'required|max:255',
+            'firstName' => 'required|max:255',
+            'lastName' => 'required|max:255',
+            'midName' => 'required|max:255',
             'card_number' => 'required|max:15',
             'parallel' => 'required|max:2',
             'classof' => 'required|max:1'
@@ -173,13 +175,20 @@ class AdminController extends Controller
             );
             return json_encode($json_data);
         }else{
-            $updateRandomUser->fio = $this->request->fio;
+            $updateRandomUser->firstName = $this->request->firstName;
+            $updateRandomUser->lastName = $this->request->lastName;
+            $updateRandomUser->midName = $this->request->midName;
             $updateRandomUser->parallel = $this->request->parallel;
             $updateRandomUser->class = $this->request->classof;
             $updateRandomUser->card_table_id = $this->card->id;
             $updateRandomUser->save();
             return 1;
         }
+    }
+
+    public function editElement()
+    {
+        return 1;
     }
 
 }

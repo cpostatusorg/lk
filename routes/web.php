@@ -9,8 +9,16 @@ Route::get('/logout', 'HomeController@index');
 Route::get('/aboutproject', 'WelcomeController@showAboutProject');
 
 Route::get('/admins/admin', 'Admin\AdminController@index');
+Route::get('/admins/requests', 'Admin\RequestController@index');
+
 Route::get('/admins/add', 'Admin\AdminController@index');
 Route::post('/admins/add', 'Admin\AdminController@addElement');
+//////////////////bank
+Route::get('/bank', 'Bank\BankController@index');
+
+Route::get('/admins/edit', 'Admin\AdminController@index');
+Route::post('/admins/edit', 'Admin\AdminController@editElement');
+
 Route::post('/admins/students', 'Admin\GetStudentController@index');
 
 

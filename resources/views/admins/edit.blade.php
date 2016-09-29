@@ -1,4 +1,4 @@
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <!-- HEADER -->
@@ -11,7 +11,7 @@
                 </button>
 
                 <h4 class="modal-title" id="myModalLabel">
-                    Добавить ученика
+                    Редактирование ученика
                 </h4>
 
             </div>
@@ -19,15 +19,12 @@
             <div class="modal-body">
                 <!-- FORM -->
                 <form autocomplete="off"
-                      id="reg_form"
                       class="form-horizontal"
                       role="form"
                       method="POST"
-                      action="javascript:void(null);"
-                      onsubmit=register()>
+                      action="{{ url('/admins/edit') }}">
 
                     {{ csrf_field() }}
-                    <!-- 1 -->
                     <div class="login_font_1 form-group">
 
                         <div class="width_control col-md-6 col-md-offset-3
@@ -88,11 +85,11 @@
                                                     col-xs-6 col-xs-offset-3
                                                     col-sm-6 col-sm-offset-3
                                                     col-lg-6 col-lg-offset-3">
-                            <input placeholder="Номер карты"
-                                   id="card_number"
+                            <input placeholder="Параллель"
+                                   id="parallel"
                                    type="text"
                                    class="form-control"
-                                   name="card_number"
+                                   name="parallel"
                                    readonly
                                    onfocus="this.removeAttribute('readonly')">
                         </div>
@@ -105,11 +102,11 @@
                                                         col-xs-6 col-xs-offset-3
                                                         col-sm-6 col-sm-offset-3
                                                         col-lg-6 col-lg-offset-3">
-                            <input placeholder="Параллель (1,2,3...)"
-                                   id="parallel"
+                            <input placeholder="Класс"
+                                   id="classof"
                                    type="text"
                                    class="form-control"
-                                   name="parallel"
+                                   name="classof"
                                    readonly
                                    onfocus="this.removeAttribute('readonly')">
                         </div>
@@ -122,11 +119,11 @@
                                                     col-xs-6 col-xs-offset-3
                                                     col-sm-6 col-sm-offset-3
                                                     col-lg-6 col-lg-offset-3">
-                            <input placeholder="Класс (а,б,в,г...)"
-                                   id="classof"
+                            <input placeholder="Номер карты"
+                                   id="card_number"
                                    type="text"
                                    class="form-control"
-                                   name="classof"
+                                   name="card_number"
                                    readonly
                                    onfocus="this.removeAttribute('readonly')">
                         </div>
@@ -140,7 +137,7 @@
                                                     col-sm-6 col-sm-offset-3
                                                     col-lg-6 col-lg-offset-3">
                             <button type="submit" class="btn btn-primary btn-login">
-                                Сохранить
+                                Отредактировать
                             </button>
                         </div>
 

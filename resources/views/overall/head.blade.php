@@ -15,7 +15,6 @@
             <!-- CSS OVERALL -->
             <link href="http://localhost/css/overall/header.css" rel="stylesheet">
             <!-- CSS MEDIA -->
-            <link href="http://localhost/css/media/media_w.css" rel="stylesheet">
 
             @if (Auth::guest())
                 <link href="http://localhost/css/guest/welcome.css" rel="stylesheet">
@@ -27,11 +26,12 @@
                 <link href="http://localhost/css/root/root_school.css" rel="stylesheet">
             @elseif (Auth::user()->hasRole('admin'))
                 <link href="http://localhost/css/admin/admin.css" rel="stylesheet">
-            <link href="http://localhost/css/admin/add.css" rel="stylesheet">
+                <link href="http://localhost/css/admin/add.css" rel="stylesheet">
             @elseif (Auth::user()->hasRole('student'))
-
+                <link href="http://localhost/css/student/student.css" rel="stylesheet">
             @endif
 
+            <link href="http://localhost/css/media/media_w.css" rel="stylesheet">
         <!-- Scripts -->
             <script src="http://localhost/js/jquery.min.js"></script>
             <script src="http://localhost/js/bootstrap.min.js"></script>
@@ -67,6 +67,7 @@
             @include('overall.footer')
         @elseif (Auth::user()->hasRole('admin'))
             @include('admins.add')
+            @include('admins.edit')
             @include('overall.footer')
         @elseif (Auth::user()->hasRole('student'))
             @include('overall.footer')
