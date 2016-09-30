@@ -23,7 +23,7 @@
             <div class="col-md-12" id="img">
                 <img src="http://localhost/img/18.jpg">
             </div>
-        
+
         <div id="null" class="col-md-12"></div>
 
             <div class="col-md-12 col-sm-12 col-xs-12" id="menu">
