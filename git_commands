@@ -1,0 +1,14 @@
+Git
+Команда
+
+1) git init
+2) git add .
+3) git commit -m "text"
+4) git stash "id commit" - вернуться на определенный коммит
+5) git clone "ссылка-адрес проекта" - клонировать проект
+
+6) git branch "имя ветки" - создает ветку
+7) git checkout "имя ветки" - переключение на ветку
+8) git push -u origin layout - загрузка на сервер
+9) git pull origin master - обновление проекта с origina
+10) git merge "name of branch"
