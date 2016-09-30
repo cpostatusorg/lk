@@ -25,21 +25,7 @@ class AdminController extends Controller
         $this->middleware(['auth', 'AdminRoleCheck']);
         $this->request = $request;
 
-        echo "dwdw";
-        echo 12312312312;
-        echo 12312312312;
-        echo 12312312312;
-        echo 12312312312;
-        echo 12312312312;
-        echo 12312312312;
-        echo 12312312312;
-
-        echo 21;
-
-        echo 123456789456132684;
-
-        echo "hello world";
-
+       echo 23;
 
     }
 
