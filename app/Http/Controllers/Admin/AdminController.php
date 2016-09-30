@@ -26,6 +26,7 @@ class AdminController extends Controller
         $this->request = $request;
 
         echo "JSON";
+        echo "123";
 
     }
 
