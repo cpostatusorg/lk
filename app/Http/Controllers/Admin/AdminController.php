@@ -27,7 +27,7 @@ class AdminController extends Controller
 
         echo "JSON";
         echo "123";
-
+        echo "123";
     }
 
     /**
