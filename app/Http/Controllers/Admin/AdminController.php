@@ -35,6 +35,7 @@ class AdminController extends Controller
         echo 12312312312;
 
         echo 21;
+        echo "hello world";
 
     }
 
