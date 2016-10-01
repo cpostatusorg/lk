@@ -24,15 +24,6 @@ class AdminController extends Controller
     {
         $this->middleware(['auth', 'AdminRoleCheck']);
         $this->request = $request;
-
-        echo "JSON";
-        echo "123";
-
-        echo "hello world";
-
-
-        echo "123";
-
     }
 
     /**

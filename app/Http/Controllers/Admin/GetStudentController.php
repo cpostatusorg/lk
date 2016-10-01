@@ -19,8 +19,6 @@ class GetStudentController extends Controller
     {
         $this->middleware(['auth', 'AdminRoleCheck']);
         $this->request = $request;
-        echo "1dwdw23";
-        echo "e1312";
     }
 
     public function index()
