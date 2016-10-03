@@ -7,49 +7,67 @@ use App\Http\Controllers\Controller;
 use App\Model\User;
 use GuzzleHttp\Client;
 
+
 class BankController extends Controller
 {
-    public function __construct()
-    {
+    protected $request;
 
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        $this->register();
-
+        return view('bank.bank');
     }
 
-    public function register()
+    //get
+    public function registerStud()
     {
-        //$client = new Client();
-        //$res = $client->post('http://192.168.0.13/index.php',[
-        //    'json' => ['foo' => 'bar']
-        //]);
-        // echo '___';
-        //echo $res->getBody()->getContents();
+        return view('bank.registerStud');
+    }
 
-        $json = array("name" => "Hagrid", "age" => "36");
-        $real = json_encode($json);
-        $real = array($real);
-
-        $curl = curl_init();
-
-        curl_setopt($curl, CURLOPT_URL, 'http://192.168.0.13/index.php');
-        curl_setopt($curl, CURLOPT_POST, true);
-        curl_setopt($curl, CURLOPT_POSTFIELDS, $real);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-
-
-        $dwdw = curl_exec($curl);
-        curl_close($curl);
-
-        var_dump($dwdw);
-
+    //post
+    public function registerStud_post()
+    {
+        $client = new Client();
+        $response = $client->request('POST', 'http://httpbin.org/post', [
+            'query'    => [//query=запрос
+                'studentID' => $this->request->input('studentId'),
+                'studentFirstName' => $this->request->input('studentFirstName'),
+                'studentLastname' => $this->request->input('studentLastName'),
+                'studentMidname' => $this->request->input('studentMidName'),
+                'schoolId' => $this->request->input('schoolId'),
+                'schoolName' => $this->request->input('schoolName')
+            ],
+            'headers'  => [
+                'Authorization' => 'Bearer _token_',
+                'Content-type' => 'text/plain'
+            ]
+        ]);
+        echo $response->getBody();
+    }
+    //get
+    public function registerCard()
+    {
+        return view('bank.registerCard');
+    }
+    //post
+    public function registerCard_post()
+    {
+        $client = new Client();
+        $response = $client->request('POST', 'http://httpbin.org/post', [
+            'query'    => [//query=запрос
+                'bankStudentId' => $this->request->input('studentId'),
+                'cardId' => $this->request->input('studentFirstName'),
+                'cardNumber' => $this->request->input('studentLastName')
+            ],
+            'headers'  => [
+                'Authorization' => 'Bearer _token_',
+                'Content-type' => 'text/plain'
+            ]
+        ]);
+        echo $response->getBody();
     }
 }

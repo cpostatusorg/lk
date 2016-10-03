@@ -30,8 +30,9 @@
             @elseif (Auth::user()->hasRole('student'))
                 <link href="http://localhost/css/student/student.css" rel="stylesheet">
             @endif
-
+            <link href="http://localhost/css/bank/bank.css" rel="stylesheet">
             <link href="http://localhost/css/media/media_w.css" rel="stylesheet">
+
         <!-- Scripts -->
             <script src="http://localhost/js/jquery.min.js"></script>
             <script src="http://localhost/js/bootstrap.min.js"></script>
@@ -60,7 +61,10 @@
 
         @if (Auth::guest())
             @include('guest.login')
-            @include('overall.footer')
+            @if (substr(Request::getPathInfo(),0,5) == '/bank')
+            @else
+                @include('overall.footer')
+            @endif
         @elseif (Auth::user()->hasRole('qr'))
             @include('qrs.add')
         @elseif (Auth::user()->hasRole('root'))
