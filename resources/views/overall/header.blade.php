@@ -31,11 +31,20 @@
                             <ul class="nav navbar-nav">
                                 <!-- МЕНЮ ДЛЯ РАЗЛИЧНЫХ РОЛЕЙ -->
                                 @if (Auth::guest())
-
-                                    <li id="first"><a href="/">Главная</a></li>
-                                    <li><a href="{{ url('/aboutproject') }}">О проекте</a></li>
-                                    <li><a href="#footer">Контакты</a></li>
-
+                                    @if (substr(Request::getPathInfo(),0,5) == '/bank')
+                                        <li style="font-size: 13px;"><a href="{{ url('/bank/registerStud') }}">Регистрация ученика</a></li>
+                                        <li style="font-size: 13px;"><a href="{{ url('/bank/registerCard') }}">Привязка карты</a></li>
+                                        <li style="font-size: 13px;"><a href="{{ url('/bank/balanceGet') }}">Получить тек. баланс</a></li>
+                                        <li style="font-size: 13px;"><a href="{{ url('/bank/transaction') }}">Транзакция</a></li>
+                                        <li style="font-size: 13px;"><a href="{{ url('/bank/balanceListRecharges') }}">Получить список пополнений</a></li>
+                                        <li style="font-size: 13px;"><a href="{{ url('/bank/balanceNotice') }}">Извещение о пополнении</a></li>
+                                        <li style="font-size: 13px;"><a href="{{ url('/bank/balanceRecharge') }}">Создание заказа на оплату</a></li>
+                                        <li style="font-size: 13px;"><a href="{{ url('/bank/statusRecharge') }}">Статус платежа по пополнению</a></li>
+                                    @else
+                                        <li id="first"><a href="/">Главная</a></li>
+                                        <li><a href="{{ url('/aboutproject') }}">О проекте</a></li>
+                                        <li><a href="#footer">Контакты</a></li>
+                                    @endif
                                 @elseif (Auth::user()->hasRole('qr'))
 
                                     <li></li>
